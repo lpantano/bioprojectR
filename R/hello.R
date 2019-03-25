@@ -9,8 +9,11 @@ init <- function(path, ...) {
     # create code
     dir.create(file.path(path, "code"), recursive = TRUE, showWarnings = FALSE)
     # create report
-    dir.create(file.path(path, "report"), recursive = TRUE, showWarnings = FALSE)
+    dir.create(file.path(path, "reports"), recursive = TRUE, showWarnings = FALSE)
     dir.create(file.path(path, "reports", "results"), recursive = TRUE, showWarnings = FALSE)
+    # create rmarkdown
+    dir.create(file.path(path, "rmarkdown"), recursive = TRUE, showWarnings = FALSE)
+
     fns = list.files(file.path(system.file(package = "Bioproject", "rstudio"),
                          "templates",
                          "common"), all.files = T,
