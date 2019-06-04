@@ -1,2 +1,33 @@
 Binding: init
 Title: bioproject
+
+Parameter: naming
+Widget: TextInput
+Label: Example naming
+Default: pi_author_sps_tissue_celltype_treat_tech_extra
+
+Parameter: dropbox_path
+Widget: TextInput
+Label: dropbox path
+Position: rigth
+Default: ~/projects
+
+Parameter: dropbox
+Widget: CheckboxInput
+Label: Make dropbox folder
+Default: On
+Position: rigth
+
+Parameter: github
+Widget: TextInput
+Label: GitHub username to create remote
+Default: git@github.mit.edu:PILM-bioinformatics
+Position: rigth
+
+
+
+
+
+
+
+

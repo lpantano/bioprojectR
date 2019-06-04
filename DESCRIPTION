@@ -7,5 +7,6 @@ Maintainer: Lorena Pantano <lorena.pantano@gmail.com>
 Description: It contains the common files used in all projects
     such as, rsync data, render rmds, and folders.
 License: MIT
+Import: git2r
 Encoding: UTF-8
 LazyData: true
