@@ -6,6 +6,7 @@ init <- function(path, ...) {
     project <- basename(path)
     # ensure path exists
     dir.create(path, recursive = TRUE, showWarnings = FALSE)
+    git2r::init(path)
 
     # create data
     dir.create(file.path(path, "data"), recursive = TRUE, showWarnings = FALSE)
@@ -38,7 +39,6 @@ init <- function(path, ...) {
                    readme, ignore.case = TRUE)
     writeLines(readme, file.path(path, "README.md"))
 
-    git2r::init(path)
     git2r::remote_add(path, "origin", url = file.path(options$github, project))
     git2r::add(path, "README.md")
     git2r::add(path, ".gitignore")
