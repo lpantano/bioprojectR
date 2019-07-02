@@ -1,7 +1,7 @@
 Package: Bioproject
 Type: Package
 Title: Template for Rstudio project for Bioinformatics
-Version: 0.1.1
+Version: 0.1.3
 Author: Lorena Pantano
 Maintainer: Lorena Pantano <lorena.pantano@gmail.com>
 Description: It contains the common files used in all projects

@@ -1,10 +1,11 @@
 library(r2dropSmart)
 token <- readRDS("~/.droptoken.rds")
 
-dropdir = "HBC Team Folder (1)/Consults/"
+dropdir = "projects/PI/PROJECT_NAME"
 
-sync(".", remote = dropdir, token = token,
-     blackList = c("_cache", "data", "Rmd$", "R$", "_files", "sh$", "Rproj$"),
-     dry = T)
+sync("reports", remote = file.path(dropdir, "reports"), token = token,
+     blackList = c("data"),
+     dry = F, share = F)
 
 #
+rdrop2::drop_upload("README.html", dropdir)
