@@ -10,7 +10,7 @@ Parameter: dropbox_path
 Widget: TextInput
 Label: dropbox path
 Position: rigth
-Default: ~/projects
+Default: projects
 
 Parameter: dropbox
 Widget: CheckboxInput
@@ -18,10 +18,22 @@ Label: Make dropbox folder
 Default: On
 Position: rigth
 
-Parameter: github
+Parameter: githut_repo
+Widget: CheckboxInput
+Label: Make github repo
+Default: On
+Position: rigth
+
+Parameter: github_api
+Widget: TextInput
+Label: GitHub API
+Default: https://github.mit.edu/api/v3
+Position: rigth
+
+Parameter: github_u
 Widget: TextInput
 Label: GitHub username to create remote
-Default: git@github.mit.edu:PILM-bioinformatics
+Default: lpantano
 Position: rigth
 
 

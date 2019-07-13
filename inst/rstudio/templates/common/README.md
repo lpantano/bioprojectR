@@ -19,7 +19,7 @@ Temporarly in OpenMind `/om/user/lpantano/projects/PROJECT_NAME`
 
 ## Results
 
-Shared dropbox: https://www.dropbox.com/home/projects/PI/PROJECT_NAME
+Shared dropbox: https://www.dropbox.com/home/DROPBOX_PATH/PI/PROJECT_NAME
 
 Inside `reports` folders:
 
